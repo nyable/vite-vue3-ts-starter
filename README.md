@@ -13,7 +13,7 @@ This template should help get you started developing with Vue 3,Typescript,Eleme
 1. Git clone or download or run `npx degit nyable/vite-vue3-ts-starter#master my-project`
 2. `cd my-project` and `npm install`  
 3. `npm run dev`
-> If an error '-4058' occurs after `npm run dev`,the reason maybe npm version > 7.0 and use `taobao` or `cnpm` registry, please run `node node_modules/esbuild/install.js` before `npm run dev`.
+> If an error '-4058' occurs after `npm run dev`,the reason maybe npm version > 7.0 and use `taobao` or `cnpm` registry, please run `node node_modules/esbuild/install.js` before `npm run dev`,or delete `node_modules`,`package-lock.json` and run `npm install` again.
 
 # Other
 ## Recommended IDE Setup
