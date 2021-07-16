@@ -26,17 +26,19 @@ export default defineComponent({
   components: {},
   setup () {
     const result = ref<Hitokoto>({ hitokoto: '', from: '', from_who: '' })
-    const queryHitokoko = async () => {
-      const { data } = await doGet('https://v1.hitokoto.cn/')
-      result.value = data
-    }
     return {
       result,
       showMessage: computed(() => {
         const { hitokoto, from, from_who } = result.value
         return hitokoto ? `"${hitokoto}" From 《${from}》 By ${from_who || 'anonymous'}` : 'Click Button Get Hitokoto.'
       }),
-      queryHitokoko
+    }
+  },
+  methods: {
+    async queryHitokoko () {
+      const { data } = await doGet('https://v1.hitokoto.cn/')
+      this.result = data
+      this.$notify({ type: 'success', message: 'Axios Http Request Success' })
     }
   }
 })
