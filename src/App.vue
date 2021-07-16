@@ -2,6 +2,7 @@
   <el-space>
     <router-link to="scss">To scss</router-link>
     <router-link to="pinia">To pinia</router-link>
+    <router-link to="axios">To axios</router-link>
   </el-space>
   <div style="text-align: center; border: solid black 1px">
     {{ message }};Score:{{ userStore.score }};

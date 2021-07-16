@@ -16,6 +16,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Pinia',
     component: () => import('@/views/pinia-demo/index.vue')
   },
+  {
+    path: '/axios',
+    name: 'Axios',
+    component: () => import('@/views/axios-demo/index.vue')
+  },
 ]
 
 const router = createRouter({
