@@ -11,6 +11,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Scss',
     component: () => import('@/views/scss-demo/index.vue')
   },
+  {
+    path: '/pinia',
+    name: 'Pinia',
+    component: () => import('@/views/pinia-demo/index.vue')
+  },
 ]
 
 const router = createRouter({

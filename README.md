@@ -1,6 +1,12 @@
-# Vue 3 + Typescript + Vite
-
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+# Dependency
+1. Vite
+2. Vue 3
+3. Typescript
+4. Pinia
+5. Element Plus
+6. Vue Router 4
+7. SASS
+This template should help get you started developing with Vue 3,Typescript,Element Plus,etc in Vite.
 
 ## Recommended IDE Setup
 
